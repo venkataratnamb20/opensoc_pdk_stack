@@ -5,7 +5,7 @@ set -e
 
 WORKDIR=${1:-"edadir"}
 mkdir -p "$WORKDIR"
-
+cd "$WORKDIR"
 
 if [ ! -d open_pdks ]; then
     git clone https://github.com/RTimothyEdwards/open_pdks.git

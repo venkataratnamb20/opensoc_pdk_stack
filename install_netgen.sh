@@ -7,7 +7,7 @@ set -e
 
 WORKDIR=${1:-"edadir"}
 mkdir -p "$WORKDIR"
-
+cd "$WORKDIR"
 
 if [ ! -d netgen ]; then
     git clone https://github.com/RTimothyEdwards/netgen.git

@@ -9,7 +9,7 @@ apt-get update && apt-get install -y \
 
 WORKDIR=${1:-"edadir"}
 mkdir -p "$WORKDIR"
-
+cd "$WORKDIR"
 
 NGSPICE_VERSION=41
 if [ ! -f ngspice-${NGSPICE_VERSION}.tar.gz ]; then

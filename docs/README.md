@@ -1,6 +1,8 @@
 # opensoc_pdk_stack
 PDK stack for opensource SOC which includes sky130A/B, GF180MCUC, xschem, magic, klayout, netgen
 
+[github](https://github.com/venkataratnamb20/opensoc_pdk_stack)
+
 ## Steps to install PDK and tools
 - download: clone the repo
 ```bash
@@ -12,7 +14,7 @@ cd opensoc_pdk_stack
 ```
 - give permission and run script
 ```bash
-chmod u+x ./*.sh && ./install_tools.sh
+chmod u+x ./*.sh && sudo ./install_tools.sh
 ```
 
 ## Test installatioon

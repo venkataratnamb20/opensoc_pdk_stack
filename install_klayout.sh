@@ -9,7 +9,7 @@ apt-get update && apt-get install -y \
 
 WORKDIR=${1:-"edadir"}
 mkdir -p "$WORKDIR"
-
+cd "$WORKDIR"
 
 KLAYOUT_VERSION=0.28.16
 if [ ! -f klayout_${KLAYOUT_VERSION}-1_amd64.deb ]; then

@@ -10,7 +10,7 @@ apt-get update && apt-get install -y \
 
 WORKDIR=${1:-"edadir"}
 mkdir -p "$WORKDIR"
-
+cd "$WORKDIR"
 
 if [ ! -d magic ]; then
     git clone https://github.com/RTimothyEdwards/magic.git

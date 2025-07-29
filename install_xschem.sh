@@ -9,7 +9,7 @@ apt-get update && apt-get install -y \
 
 WORKDIR=${1:-"edadir"}
 mkdir -p "$WORKDIR"
-
+cd "$WORKDIR"
 
 if [ ! -d xschem ]; then
     git clone https://github.com/StefanSchippers/xschem.git
