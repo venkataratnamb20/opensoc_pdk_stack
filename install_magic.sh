@@ -2,7 +2,7 @@
 set -e
 
 # Install dependencies
-apt-get update && apt-get install -y \
+sudo apt-get update && sudo apt-get install -y \
     m4 tcsh csh libx11-dev tcl-dev tk-dev libcairo2-dev \
     mesa-common-dev libglu1-mesa-dev libncurses-dev
 
@@ -18,7 +18,7 @@ fi
 cd magic
 ./configure --enable-cairo-offscreen
 make -j$(nproc)
-make install
+sudo make install
 cd ..
 rm -rf magic 
 cd ..

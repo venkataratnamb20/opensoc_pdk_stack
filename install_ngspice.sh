@@ -2,7 +2,7 @@
 set -e
 
 # Install dependencies
-apt-get update && apt-get install -y \
+sudo apt-get update && sudo apt-get install -y \
     libxaw7-dev libreadline-dev
 
 # Download and build ngspice
@@ -21,7 +21,7 @@ mkdir -p release
 cd release
 ../configure --with-x --enable-xspice --disable-debug --enable-cider --with-readline=yes --enable-predictor --enable-osdi --enable-openmp
 make -j$(nproc)
-make install
+sudo make install
 cd ./"$1"
 rm -rf ngspice-${NGSPICE_VERSION}* 
 cd ..

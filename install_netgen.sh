@@ -15,7 +15,7 @@ fi
 cd netgen
 ./configure
 make -j$(nproc)
-make install
+sudo make install
 cd ..
 rm -rf netgen 
 cd ..

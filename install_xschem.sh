@@ -2,7 +2,7 @@
 set -euxo pipefail
 
 # Install dependencies
-apt-get update && apt-get install -y \
+sudo apt-get update && sudo apt-get install -y \
     flex bison libxpm-dev
 
 # Clone and build XSchem
@@ -17,7 +17,7 @@ fi
 cd xschem
 ./configure
 make -j$(nproc)
-make install
+sudo make install
 cd ..
 rm -rf xschem 
 cd ..

@@ -14,12 +14,12 @@ mkdir -p "$WORKDIR"
 sudo apt-get update && sudo apt-get upgrade -y && \
   sudo apt-get install -y klayout
 
-sudo ./install_dependencies.sh
-sudo ./install_xschem.sh "$WORKDIR" 
-sudo ./install_magic.sh "$WORKDIR"
-# sudo ./install_klayout.sh "$WORKDIR"
-sudo ./install_open_pdks.sh "$WORKDIR"
-sudo ./install_netgen.sh "$WORKDIR"
+./install_dependencies.sh
+./install_xschem.sh "$WORKDIR" 
+./install_magic.sh "$WORKDIR"
+# ./install_klayout.sh "$WORKDIR"
+./install_open_pdks.sh "$WORKDIR"
+./install_netgen.sh "$WORKDIR"
 # sudo apt-get install -y ngspice
 
 # echo 'export PDK_ROOT="/usr/local/share/pdk"' >> ~/.bash_aliases
