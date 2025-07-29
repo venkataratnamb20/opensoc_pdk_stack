@@ -27,5 +27,25 @@ cat ./tmp.txt >> ~/.bash_aliases
 rm -f ./tmp.txt
 rm -rf "$WORKDIR"
 
+# Test
+#
+#
+# ngspice
+#
+
+echo "ngspice version..."
+ngspice -v
+
+echo "xschem version..."
+xschem -v
+
+echo "klayout version..."
+klayout -v
+
+echo "magic version..."
+magic --version
+
+echo "netgen version..."
+netgen -v
 
 exit 0
