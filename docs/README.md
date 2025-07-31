@@ -14,7 +14,7 @@ cd opensoc_pdk_stack
 ```
 - give permission and run script
 ```bash
-chmod u+x ./*.sh && sudo ./install_tools.sh
+chmod u+x ./*.sh && ./install_tools.sh
 ```
 
 ## Test installatioon
