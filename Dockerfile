@@ -8,8 +8,8 @@ WORKDIR /tmp
 #    build-essential tcsh csh tcl-dev tk-dev 
 
 # COPY ./install_tools.sh /tmp/install_tools.sh
-COPY ./.bash_aliases /tmp/.bash_aliases
-COPY *.sh /tmp
+COPY ./scripts/.bash_aliases /tmp/.bash_aliases
+COPY ./scripts/*.sh /tmp
 # RUN ./install_xschem.sh
 
 RUN chmod +x /tmp/*.sh && \
