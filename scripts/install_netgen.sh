@@ -1,5 +1,5 @@
-#!/bin/bash
-set -e
+#!/usr/bin/env bash
+set -euxo pipefail
 
 # Install dependencies (already installed with magic)
 
@@ -20,4 +20,7 @@ cd ..
 rm -rf netgen 
 cd ..
 
+echo "###################################################"
+echo "[ Success ] netgen installed"
+echo "###################################################"
 exit 0

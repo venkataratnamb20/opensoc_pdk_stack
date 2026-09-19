@@ -6,12 +6,9 @@ PDK stack for opensource SOC which includes sky130A/B, GF180MCUC, xschem, magic,
 ```bash
 git clone https://github.com/venkataratnamb20/opensoc_pdk_stack.git
 ```
-- go to directory
+- go to directory, give permission and run script
 ```bash
-cd opensoc_pdk_stack
-```
-- give permission and run script
-```bash
+cd opensoc_pdk_stack && \
 chmod u+x ./*.sh && ./install_tools.sh
 ```
 

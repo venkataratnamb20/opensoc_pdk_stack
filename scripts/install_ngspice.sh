@@ -1,8 +1,8 @@
-#!/bin/bash
-set -e
+#!/usr/bin/env bash
+set -euxo pipefail
 
 # Install dependencies
-sudo apt-get update && sudo apt-get install -y \
+sudo apt-get update -y && sudo apt-get install -y \
     libxaw7-dev libreadline-dev
 
 # Download and build ngspice
@@ -27,4 +27,7 @@ rm -rf ngspice-${NGSPICE_VERSION}*
 cd ..
 
 
+echo "###################################################"
+echo "[ Success ] ngspice installed"
+echo "###################################################"
 exit 0

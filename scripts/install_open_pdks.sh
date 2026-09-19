@@ -1,5 +1,5 @@
-#!/bin/bash
-set -e
+#!/usr/bin/env bash
+set -euxo pipefail
 
 # Clone and build Open PDKs
 
@@ -19,4 +19,7 @@ cd ..
 rm -rf open_pdks 
 cd ..
 
+echo "###################################################"
+echo "[ Success ] open_pdks installed"
+echo "###################################################"
 exit 0
