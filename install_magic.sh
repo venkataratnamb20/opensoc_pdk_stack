@@ -1,8 +1,8 @@
-#!/bin/bash
-set -e
+#!/usr/bin/env bash
+set -euxo pipefail
 
 # Install dependencies
-sudo apt-get update && sudo apt-get install -y \
+sudo apt-get update -y && sudo apt-get install -y \
     m4 tcsh csh libx11-dev tcl-dev tk-dev libcairo2-dev \
     mesa-common-dev libglu1-mesa-dev libncurses-dev
 
@@ -23,4 +23,7 @@ cd ..
 rm -rf magic 
 cd ..
 
+echo "###################################################"
+echo "[ Success ] magic installed"
+echo "###################################################"
 exit 0

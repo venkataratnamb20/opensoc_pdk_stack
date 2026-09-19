@@ -1,8 +1,8 @@
-#!/bin/bash
-set -e
+#!/usr/bin/env bash
+set -euxo pipefail
 
 # Install dependencies
-sudo apt-get update && sudo apt-get install -y \
+sudo apt-get update -y && sudo apt-get install -y \
     qtbase5-dev qtchooser qt5-qmake qtbase5-dev-tools libqt5svg5-dev
 
 # Download and install KLayout
@@ -21,4 +21,7 @@ rm -rf *.deb
 cd ..
 
 
+echo "###################################################"
+echo "[ Success ] klayout installed"
+echo "###################################################"
 exit 0

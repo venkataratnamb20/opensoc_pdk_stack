@@ -1,8 +1,8 @@
-#!/bin/bash
+#!/usr/bin/env bash
 set -euxo pipefail
 
 # Install dependencies
-sudo apt-get update && sudo apt-get install -y \
+sudo apt-get update -y && sudo apt-get install -y \
     flex bison libxpm-dev
 
 # Clone and build XSchem
@@ -22,4 +22,7 @@ cd ..
 rm -rf xschem 
 cd ..
 
+echo "###################################################"
+echo "[ Success ] xschem installed"
+echo "###################################################"
 exit 0

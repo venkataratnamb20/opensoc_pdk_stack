@@ -11,10 +11,10 @@ set -euxo pipefail
 WORKDIR=${1:-"edadir"}
 mkdir -p "$WORKDIR"
 
-sudo apt-get update && sudo apt-get upgrade -y && \
-  sudo apt-get install -y klayout
-
 ./install_dependencies.sh
+# sudo apt-get update -y && sudo apt-get upgrade -y && \
+sudo apt-get install -y klayout
+
 ./install_xschem.sh "$WORKDIR" 
 ./install_magic.sh "$WORKDIR"
 # ./install_klayout.sh "$WORKDIR"
@@ -52,4 +52,7 @@ magic --version
 echo "netgen version..."
 netgen -v
 
+echo "###################################################"
+echo "[ Success ] All Tools installed"
+echo "###################################################"
 exit 0
