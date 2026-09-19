@@ -13,7 +13,8 @@ mkdir -p "$WORKDIR"
 cd "$WORKDIR"
 
 if [ ! -d magic ]; then
-    git clone https://github.com/RTimothyEdwards/magic.git
+    # git clone https://github.com/RTimothyEdwards/magic.git
+    git clone git://opencircuitdesign.com/magic
 fi
 cd magic
 ./configure --enable-cairo-offscreen

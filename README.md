@@ -8,7 +8,7 @@ git clone https://github.com/venkataratnamb20/opensoc_pdk_stack.git
 ```
 - go to directory, give permission and run script
 ```bash
-cd opensoc_pdk_stack && \
+cd opensoc_pdk_stack/scripts && \
 chmod u+x ./*.sh && ./install_tools.sh
 ```
 
